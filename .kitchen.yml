@@ -20,6 +20,7 @@ suites:
   - name: default
     run_list:
       - recipe[gradle-sample::default]
+      - recipe[gradle-sample::test]
     verifier:
       inspec_tests:
         - test/integration/default
